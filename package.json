@@ -1,25 +1,15 @@
 {
-  "name": "talexample",
-  "private": true,
-  "version": "0.1.0",
-  "description": "Example application for the TAL framwork.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/fmtvp/talexample.git"
-  },
-  "keywords": [
-    "tal",
-    "talframework",
-    "bbc"
-  ],
-  "author": "BBC Future Media",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/fmtvp/talexample/issues"
-  }
+    "name": "Text-Truncation-Test-Harness",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "test": "grunt test"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-cli": "~0.1.6",
+        "grunt-contrib-jasmine": "~0.6.5",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-watch": "~0.6.1"
+    }
 }

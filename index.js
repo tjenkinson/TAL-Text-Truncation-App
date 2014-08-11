@@ -111,7 +111,7 @@ function returnResponse(url, response)
 			response.write("var require = {");
 				response.write("baseUrl: '',");
 				response.write("paths: {");
-					response.write(application_id + ": 'static/script',");
+					response.write(application_id + ": 'static-versioned/script',");
 					response.write("antie : 'antie/static/script'");
 				response.write("},");
 				response.write("priority: [],");
@@ -119,7 +119,7 @@ function returnResponse(url, response)
 			response.write("};");
 		response.write("</script>");
 		response.write("<script type='text/javascript' src='./antie/static/script/lib/require.js'></script>");
-		response.write("<link rel='stylesheet' href='static/style/base.css'/>");
+		response.write("<link rel='stylesheet' href='webapp/static-versioned/style/base.css'/>");
 
 		response.write("<script>");
 			response.write("var antie = {framework: { deviceConfiguration: " + device_configuration + "}}");
@@ -151,8 +151,8 @@ function returnResponse(url, response)
 
 						response.write("new SampleApp(");
 								response.write("document.getElementById('app'),");
-								response.write("'static/style/',");
-								response.write("'static/img/',");
+								response.write("'static-versioned/style/',");
+								response.write("'static-versioned/img/',");
 								response.write("onReady");
 						response.write(");");
 					response.write("});");
